@@ -1,0 +1,17 @@
+package classesauxiliares;
+
+import interfaces.PermitirAcesso;
+
+/*Permitir acesso somente a quem está atendendo o contrato Autenticar*/
+public class FuncaoAutenticacao {
+
+	private PermitirAcesso permitirAcesso;
+	
+	public boolean autenticarAcesso(PermitirAcesso acesso) {
+		return acesso.autenticar();
+	}
+	
+	public boolean FuncaoAutenticacao(PermitirAcesso acesso) {
+		this.permitirAcesso = acesso;
+	}
+}

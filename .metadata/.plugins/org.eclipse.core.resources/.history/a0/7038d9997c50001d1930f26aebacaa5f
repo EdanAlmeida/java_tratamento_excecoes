@@ -1,0 +1,30 @@
+package executavel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import classes.Aluno;
+import classes.Diretor;
+import classesauxiliares.FuncaoAutenticacao;
+
+public class PrimeiraClasseJava {
+
+	@SuppressWarnings("rawtypes")
+	public static void main(String[] args) {
+		
+		String login = JOptionPane.showInputDialog("Informe o login: ");
+		String senha = JOptionPane.showInputDialog("Informe a senha: ");
+		
+		if (new FuncaoAutenticacao(new Diretor(login, senha)).autenticar()) {
+			List<Aluno> alunos = new ArrayList<Aluno>();
+			
+			
+		}
+		
+
+		
+	}
+
+}

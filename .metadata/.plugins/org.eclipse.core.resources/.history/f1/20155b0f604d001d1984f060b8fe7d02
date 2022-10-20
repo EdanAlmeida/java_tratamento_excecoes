@@ -1,0 +1,6 @@
+package classesauxiliares;
+
+/*Permitir acesso somente a quem está atendendo o contrato Autenticar*/
+public class FuncaoAutenticacao {
+
+}

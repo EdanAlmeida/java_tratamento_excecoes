@@ -1,0 +1,24 @@
+package executavel;
+
+import classes.Aluno;
+import classes.Diretor;
+import classes.Secretario;
+
+public class TestandoClassesFilhas {
+	public static void main(String[] args) {
+		
+		Aluno aluno1 = new Aluno();
+		aluno1.setNome("Edan");
+		
+		Diretor diretor1 = new Diretor();
+		diretor1.setNome("Cesar");
+		
+		Secretario secretario1 = new Secretario();
+		secretario1.setNome("Maria");
+		
+		System.out.println("Aluno: " + aluno1);
+		System.out.println("Diretor: " + diretor1);
+		System.out.println("Secretario: " + secretario1);
+		
+	}
+}

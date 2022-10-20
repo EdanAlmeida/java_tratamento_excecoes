@@ -1,0 +1,25 @@
+package interfaces;
+
+import javax.swing.JOptionPane;
+
+import classes.Secretario;
+
+/*Testando autenticação do Secretário*/
+public class TestandoSecretario {
+
+	public static void main(String[] args) {
+		
+		String login = JOptionPane.showInputDialog("Informe o login: ");
+		String senha = JOptionPane.showInputDialog("Informe a senha: ");
+		
+		if (new Secretario().autenticar(login, senha)) {
+			JOptionPane.showMessageDialog(null, "Acesso permitido!");
+			JOptionPane.showMessageDialog(null, "Escolha uma das opções abaixo:");
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "Acesso negado!");
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="constantes.StatusAluno"/>
+    <fullyQualifiedTypeName name="classes.Aluno"/>
+    <fullyQualifiedTypeName name="classes.Pessoa"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="classes.Secretario"/>
+    <fullyQualifiedTypeName name="classesauxiliares.FuncaoAutenticacao"/>
+    <fullyQualifiedTypeName name="interfaces.PermitirAcesso"/>
+    <fullyQualifiedTypeName name="classes.Diretor"/>
+</qualifiedTypeNameHistroy>
