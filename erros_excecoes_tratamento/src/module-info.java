@@ -5,6 +5,6 @@
  * @author edlui
  *
  */
-module heranca_polimorfismo {
+module tratamento_execoes_erros {
 	requires java.desktop;
 }
