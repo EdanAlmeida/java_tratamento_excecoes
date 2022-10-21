@@ -19,6 +19,7 @@ public class PrimeiraClasseJava {
 		
 		try {
 		
+			new File("arquivo.txt");
 
 		String login = JOptionPane.showInputDialog("Informe o login: ");
 		String senha = JOptionPane.showInputDialog("Informe a senha: ");
@@ -112,7 +113,7 @@ public class PrimeiraClasseJava {
 			JOptionPane.showMessageDialog(null, "Acesso negado! ");
 		}
 
-		}catch (Exception e) { /*sempre imprimir o log no console*/
+		}catch (NumberFormatException e) { /*sempre imprimir o log no console*/
 			e.printStackTrace(); /*imprime o erro no console Java*/
 			
 			/*Mensagem do erro ou causa*/
@@ -125,7 +126,11 @@ public class PrimeiraClasseJava {
 			
 			
 			
-			JOptionPane.showMessageDialog(null, "Erro ao processar notas!");
+			JOptionPane.showMessageDialog(null, "Erro de conversão de número.");
+		}catch (NullPointerException e) {
+			JOptionPane.showMessageDialog(null, "Null Pointer Exception.");
+		}catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 
