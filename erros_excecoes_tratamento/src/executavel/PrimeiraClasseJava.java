@@ -1,8 +1,11 @@
 package executavel;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -11,6 +14,7 @@ import classes.Diretor;
 import classes.Disciplina;
 import classesauxiliares.FuncaoAutenticacao;
 import constantes.StatusAluno;
+import excecao.ExcecaoProcessarNota;
 
 public class PrimeiraClasseJava {
 
@@ -19,7 +23,12 @@ public class PrimeiraClasseJava {
 		
 		try {
 		
-			new File("arquivo.txt");
+		try {
+			File fil = new File("lines.txt");
+			Scanner scanner = new Scanner(fil);
+		}catch (FileNotFoundException e) {
+			throw new ExcecaoProcessarNota(e.getMessage());
+		}
 
 		String login = JOptionPane.showInputDialog("Informe o login: ");
 		String senha = JOptionPane.showInputDialog("Informe a senha: ");
@@ -131,7 +140,9 @@ public class PrimeiraClasseJava {
 			JOptionPane.showMessageDialog(null, "Null Pointer Exception.");
 		}catch (Exception e) {
 			e.printStackTrace();
+			JOptionPane.showMessageDialog(null, "Erro inesperado: " + e.getClass().getName());
+		}finally { /*Sempre é executado, ocorrendo erros ou não*/
+			JOptionPane.showMessageDialog(null, "Obrigado por ser tão tolinho");
 		}
 	}
-
 }
